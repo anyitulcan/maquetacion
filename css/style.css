@@ -1,0 +1,43 @@
+* *{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    height: 60px;
+    background-color: rgb(226, 110, 110);
+   font-size: 1.8em;
+   color: white;
+    font-size: Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900px;
+}
+ul{
+    background-color:white;
+    display:  block;
+    text-align: right;
+    height: 80px;
+    text-decoration: none;
+    padding-right: 50px;
+}
+li{
+    display: inline-block;
+    margin: 15px 17px ;
+    cursor: pointer;
+    list-style: none;
+    
+}
+a:hover{
+    color: red;
+}
+a{
+    color: rgb(24, 24, 9);
+    text-decoration: none;
+}
+.box{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+.img{
+    width: 200px;
+}
+
