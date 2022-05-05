@@ -6,7 +6,6 @@
     height: 60px;
     background-color: rgb(226, 110, 110);
    font-size: 1.8em;
-   color: white;
     font-size: Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 900px;
 }
@@ -40,4 +39,46 @@ a{
 .img{
     width: 200px;
 }
+.img-principal{
+    width: 100%;
+}
+.menu-hambur{
+    font-size: 1.8em;
+    float: right;
+    visibility: hidden;
 
+}
+.box-imagenes{
+    display: grid;
+    width: 90%;
+   /*  background-color: blue; */
+    margin: 0 auto;
+    grid-template: "dsp-audi dsp-area dsp-tesla1 dsp-tesla2"
+}
+.dsp-audi{
+    grid-area: dsp-audi;
+}
+.dsp-che{
+    grid-area: dsp-che;
+}
+.dsp-tesla1{
+    grid-area: dsp-tesla1;
+}
+.dsp-tesla2{
+    grid-area: dsp-tesla2;
+}
+@media only screen and (min-width: 320px) and (max-width: 970px) {
+    nav li {
+        visibility: hidden;
+    }
+    .menu-hambur{
+        visibility: visible;
+    }
+    .box-imagenes{
+        grid-template: "dsp-audi"
+                        "dsp-che"
+                        "dsp-tesla1"
+                        "dsp-tesla2"
+
+    }
+}
